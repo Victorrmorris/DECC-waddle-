@@ -16,7 +16,7 @@ Welcome to the Lifestyle Budget Optimizer! This app is designed to help military
 st.sidebar.header("Navigation")
 st.sidebar.markdown("Select a section to explore:")
 sections = ["Overview", "Upcoming Withdrawals", "Savings Opportunities", "Chatbot Insights"]
-selected_section = selected_section = st.sidebar.radio("Go to:", sections, index=0)
+selected_section = st.sidebar.radio("Go to:", sections, index=0)
 
 # Overview Section
 if selected_section == "Overview":
@@ -65,8 +65,7 @@ elif selected_section == "Chatbot Insights":
     # Large chatbot UI
     user_input = st.text_area("Type your question here:", height=200, placeholder="Ask about your finances, budgeting, or savings opportunities...")
     if st.button("Get Insights"):
-    # Placeholder for chatbot integration: Replace this with API/model integration if available.
-    if user_input.strip():
+        # Placeholder for chatbot integration: Replace this with API/model integration if available.
         if user_input.strip():
             st.write(f"AI Response for: '{user_input}'")  # Placeholder for chatbot response
         else:
